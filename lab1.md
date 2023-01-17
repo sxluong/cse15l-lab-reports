@@ -10,6 +10,6 @@ all you are required to do is to visit [website](https://code.visualstudio.com) 
 ![image](https://user-images.githubusercontent.com/122576207/212795682-619eb865-d73c-4a84-abd8-65f41618de4e.png)
 <img width="1654" alt="image" src="https://user-images.githubusercontent.com/122576207/212795867-77e8def3-a989-4cb6-8d67-a31e568018b0.png">
 
-
+Now, once that you have the IDE opened you, want to access the terminal by clicking 'view' and then 'terminal' which will be located on the access bar on top. 
 
 
