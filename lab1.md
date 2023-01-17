@@ -6,4 +6,10 @@ choose one of the two ways to login. As you get in, searching for the email asso
 Notice the username^. In my case it is cs15lwi23aiv.
 
 The next step requires you to install Visual Studio Code. If you do already have it preinstalled like I do, don't worry! However, it is easy to install as
-all you are required to do is to visit 
+all you are required to do is to visit [website](https://code.visualstudio.com) then download and install visual studios. The reason we need visual studios is to access a terminal where we can then "ssh" or connect to a remote server.
+![image](https://user-images.githubusercontent.com/122576207/212795682-619eb865-d73c-4a84-abd8-65f41618de4e.png)
+<img width="1654" alt="image" src="https://user-images.githubusercontent.com/122576207/212795867-77e8def3-a989-4cb6-8d67-a31e568018b0.png">
+
+
+
+
