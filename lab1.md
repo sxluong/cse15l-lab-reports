@@ -10,7 +10,7 @@ all you are required to do is to visit [website](https://code.visualstudio.com) 
 ![image](https://user-images.githubusercontent.com/122576207/212795682-619eb865-d73c-4a84-abd8-65f41618de4e.png)
 <img width="1654" alt="image" src="https://user-images.githubusercontent.com/122576207/212795867-77e8def3-a989-4cb6-8d67-a31e568018b0.png">
 
-Now, once that you have the IDE opened you, want to access the terminal by clicking 'view' and then 'terminal' which will be located on the access bar on top. In the command prompt you want to type exactly "ssh cs15lwi23zz@ieng6.ucsd.edu" but change the ending after 23 to be your unique username, the username we found at the beginning of the guide. 
+Now, once that you have the IDE opened you, want to access the terminal by clicking 'view' and then 'terminal' which will be located on the access bar on top. In the command prompt you want to type exactly `ssh cs15lwi23zz@ieng6.ucsd.edu` but change the ending after 23 to be your unique username, the username we found at the beginning of the guide. 
 Since it is obviously your first time sshing into a remote server, you will be presented with this:
 ![image](https://user-images.githubusercontent.com/122576207/212797614-9fac74d9-91a4-4eeb-abae-ac316d79e463.png)
 Just say yes.
@@ -21,7 +21,7 @@ It should look like this :
 
 Now that you have access to the remote server, you can try some commands out.
 ![image](https://user-images.githubusercontent.com/122576207/212798369-d57fc77d-a580-428c-add3-ae9ebe5fa026.png)
-From the example code I displayed, I noticed many things. The command ‘ls’ listed the files in the current home directory. I then “step” within the perl5 file by using ‘cd’ where can then see and configure all the contents within. The command ‘pwd’ tells me the “absolute path” and the current working directory I’m in. If you follow cd with ‘..’, it simply goes back to the root directory. Lastly, what I found amusing was how I could make another directory using ‘mkdir (name of directory)’ and it would pop up in my files. I made sure of the presence of the directory by doing ‘ls’.
+From the example code I displayed, I noticed many things. The command `ls` listed the files in the current home directory. I then “step” within the perl5 file by using `cd` where can then see and configure all the contents within. The command ‘pwd’ tells me the “absolute path” and the current working directory I’m in. If you follow `cd` with `..`, it simply goes back to the home directory. Lastly, what I found amusing was how I could make another directory using `mkdir` (name of directory) and it would pop up in my files. I made sure of the presence of the directory by doing `ls`.
 
 Hooray! You have managed to connect to a remote server and write commands.
 
