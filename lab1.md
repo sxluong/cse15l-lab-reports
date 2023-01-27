@@ -21,7 +21,7 @@ It should look like this :
 
 Now that you have access to the remote server, you can try some commands out.
 ![image](https://user-images.githubusercontent.com/122576207/212798369-d57fc77d-a580-428c-add3-ae9ebe5fa026.png)
-From the example code I displayed, I noticed many things. The command `ls` listed the files in the current home directory. I then “step” within the perl5 file by using `cd` where can then see and configure all the contents within. The command ‘pwd’ tells me the “absolute path” and the current working directory I’m in. If you follow `cd` with `..`, it simply goes back to the home directory. Lastly, what I found amusing was how I could make another directory using `mkdir` (name of directory) and it would pop up in my files. I made sure of the presence of the directory by doing `ls`.
+From the example code I displayed, I noticed many things. The command `ls` listed the files in the current home directory. I then “step” within the perl5 file by using `cd` where can then see and configure all the contents within. The command `pwd` tells me the “absolute path” and the current working directory I’m in. If you follow `cd` with `..`, it simply goes back to the home directory. Lastly, what I found amusing was how I could make another directory using `mkdir` (name of directory) and it would pop up in my files. I made sure of the presence of the directory by doing `ls`.
 
 Hooray! You have managed to connect to a remote server and write commands.
 
