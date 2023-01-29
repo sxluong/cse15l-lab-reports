@@ -1,6 +1,7 @@
 Part 1:
 My code:
-`import java.io.IOException;
+```
+import java.io.IOException;
 import java.net.URI;
 import java.io.IOException;
 import java.net.URI;
@@ -15,8 +16,7 @@ class Handler implements URLHandler {
     @Override
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            // not optimal at all because I don't know java that well but
-            // I am going to loop everything
+      
             String to_return = "";
             for (int i = 0; i < 20; i++) {
                 if (wordsArray[i] != null) {
@@ -49,7 +49,7 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-`
+```
 
 
 Initially my website is a blank page which should be evident given that I have not inserted any strings into the website.
@@ -59,13 +59,12 @@ Next, I will add a message.
 The "added" message indicates that I have added a string. The string being added is "Hello" as shown in the url after the "=" sign. The url goes through
 my handlerequest function. It gets parsed by multiple if statements. In this case of adding the message, since the link "http://localhost:2024/add-message?s=Hello"
 contains the key word "add-message", the method parses the query inserting it into an array. `String[] parameters = url.getQuery().split("=");` is the statement that does so.
-The first element in the array contains the s and the second contains the string itself (positioned at 1 in the array). Using this knowledge, I can add the string into the global array
+The first element in the array contains the s and the second contains the string itself (positioned at 1 in the array). Using this knowledge, I can add the string into the global array. Then I will add one to the global variable 'count' which keeps the position of each incoming string that is being added.
 I created outside the scope of the function to store all the strings that I have added.
 Nevertheless, as I go back to the page shows "Hello" imprinted when I go back to the original URL without a query. 
 ![image](https://user-images.githubusercontent.com/122576207/215295275-265fa590-9fdd-4205-ab2e-9a157f5cc264.png)
 
-The reason it prints out is because, in my method, if the path is simply "/", this indicates to my function to go through all the added strings and return(or print) 
-them.
+The reason it prints out is because, in my method, if the path is simply "/", this indicates to my function to go through all the added strings and return(or print) them. I also ensure to keep the order and skip a line with `\n`.
 
 I will add another string once more.
 ![image](https://user-images.githubusercontent.com/122576207/215295347-fd8c45d2-8b46-4db1-b418-d05ca941f719.png)
@@ -73,4 +72,15 @@ I will add another string once more.
 
 Vuola!
 
+Part 2:
 
+Failure inducing input:
+Associated code:
+`  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+  `
