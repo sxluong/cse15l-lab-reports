@@ -75,7 +75,8 @@ Vuola!
 Part 2:
 
 Failure inducing input:
-`public void testReversednew() {
+```
+public void testReversednew() {
     int[] input1 = { 1, 2, 3, 4 };
     int[] input2 = { 1 };
     int[] input3 = { 1, 2, 3 };
@@ -84,26 +85,28 @@ Failure inducing input:
     assertArrayEquals(new int[] { 1 }, ArrayExamples.reversed(input2));
     assertArrayEquals(new int[] { 3, 2, 1 }, ArrayExamples.reversed(input3));
   }
-  `
+  ```
   All the tests fail because the code does not even return the correct array. It adds null values to the array we were passed as a reference in the argument of the function.
 Associated code:
-`  static int[] reversed(int[] arr) {
+```
+static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = newArray[arr.length - i - 1];
     }
     return arr;
   }
-  `
+ ```
 
 An input that doesn't induce a failure:
-``public void testReversednew() {
+```
+  public void testReversednew() {
     int[] input1 = {};
    
 
     assertArrayEquals(new int[] {}, ArrayExamples.reversed(input1));
   }
-``
+```
 Associated code: ^ same and before
 This only passes because it is an empty array. An empty array will pass in teh function and an empty array will spit out because it doesn't even go through the loop that is suppose to instantiate the new reveresed values.
 The symptom : 
@@ -112,24 +115,26 @@ There were many differences as indicated by the "38 more" errors statement.
 
 
 Fixing code->
-Before: 
-`static int[] reversed(int[] arr) {
+Before:
+```
+static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = newArray[arr.length - i - 1];
     }
     return arr;
   }
-  `
+  ```
   After:
-  `static int[] reversed(int[] arr) {
+  ```
+  static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for (int i = 0; i < arr.length; i++) {
     newArray[i] = arr[arr.length - i - 1];
     }
     return newArray;
   }
-  `
+  ```
   I tweaked the code just a little. The logic with the for loop was correct as you want to add to an array reversing through the passed in array. I just tweaked the return statement to return the new array that we instantiate and add to. The new array is also added.
   
   Part 3:
