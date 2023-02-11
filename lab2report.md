@@ -1,5 +1,6 @@
 <h1>Part 1: </h1>
 My code:
+
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -11,9 +12,12 @@ class Handler implements URLHandler {
     // various requests.
     String[] wordsArray = new String[20];
     int count = 0;
+
+    // sized 20 just in case
     @Override
     public String handleRequest(URI url) {
-        if (url.getPath().equals("/")) {  
+        if (url.getPath().equals("/")) {
+      
             String to_return = "";
             for (int i = 0; i < 20; i++) {
                 if (wordsArray[i] != null) {
@@ -33,7 +37,9 @@ class Handler implements URLHandler {
         }
     }
 }
+```
 
+```
 class StringServer {
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
