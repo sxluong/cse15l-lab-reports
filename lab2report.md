@@ -72,7 +72,7 @@ I will add another string once more.
 
 Vuola!
 
-<h1>Part 2:</h1>
+Part 2:
 
 Failure inducing input:
 ```
@@ -137,5 +137,5 @@ static int[] reversed(int[] arr) {
   ```
   I tweaked the code just a little. The logic with the for loop was correct as you want to add to an array reversing through the passed in array. I just tweaked the return statement to return the new array that we instantiate and add to. The new array is also added.
   
-  <h1>Part 3:</h1>
+  Part 3:
   I never really knew how to debug using Jnit tests. Neither did I know I change the localhost id other than 8000. I am glad to have learned this as I will continue to apply this knowledge in my future coding adventures.
