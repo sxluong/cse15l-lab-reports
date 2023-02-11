@@ -1,6 +1,6 @@
 <h1>Part 1: </h1>
 My code:
-`
+```
 import java.io.IOException;
 import java.net.URI;
 import java.io.IOException;
@@ -36,7 +36,8 @@ class Handler implements URLHandler {
         }
     }
 }
-
+```
+```
 class StringServer {
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
@@ -49,7 +50,7 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-`
+```
 
 
 Initially my website is a blank page which should be evident given that I have not inserted any strings into the website.
