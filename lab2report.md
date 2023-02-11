@@ -57,6 +57,7 @@ Initially my website is a blank page which should be evident given that I have n
 ![image](https://user-images.githubusercontent.com/122576207/215294855-99dace63-db29-4331-9406-5d654fbdfcd0.png)
 Next, I will add a message. 
 ![image](https://user-images.githubusercontent.com/122576207/215294940-9c663ac6-1781-475d-aa2d-74876eafdce7.png)
+
 The "added" message indicates that I have added a string. The string being added is "Hello" as shown in the url after the "=" sign. The url goes through
 my handlerequest function. It gets parsed by multiple if statements. In this case of adding the message, since the link "http://localhost:2024/add-message?s=Hello"
 contains the key word "add-message", the method parses the query inserting it into an array. `String[] parameters = url.getQuery().split("=");` is the statement that does so.
