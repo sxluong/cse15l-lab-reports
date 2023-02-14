@@ -1,5 +1,5 @@
 <h2>I will use `grep -c`</h2>
-`berlitz2/Algarve-History.txt:0
+``berlitz2/Algarve-History.txt:0
 berlitz2/Algarve-Intro.txt:0
 berlitz2/Algarve-WhatToDo.txt:1
 berlitz2/Algarve-WhereToGo.txt:0
@@ -76,4 +76,4 @@ berlitz2/PuertoRico-WhatToDo.txt:0
 berlitz2/PuertoRico-WhereToGo.txt:0
 berlitz2/Vallarta-History.txt:0
 berlitz2/Vallarta-WhatToDo.txt:0
-berlitz2/Vallarta-WhereToGo.txt:0`
+berlitz2/Vallarta-WhereToGo.txt:0``
