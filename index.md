@@ -1,2 +1,2 @@
 *Hi, I like long walks on the beach with an ice cream cone in my hand.*
-[link](lab2report.md)
+[link](LabReport3.md)
