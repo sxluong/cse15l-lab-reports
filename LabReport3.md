@@ -1,6 +1,6 @@
 <h1>The Command 'grep' </h1>
 Brief introduction: This bash command, given a certain pattern list, will search given files for the pattern list (string, numbers,etc).
-After finding what it is looking for, it will return the line that contains the designated pattern list. For instance, grep, given a string and designated text file, will find that string within the text file and return the line that contains the string (if it does).
+After finding what it is looking for, it will return the line that contains the designated pattern list. For instance, grep, given a string and designated text file, will find that string within the text file and return the line that contains the string (if it does). Furthermore, grep also contains special keys that entail different types of searching...which I will explore below!
 
 <h2>I will use 'grep -c'</h2>
 
