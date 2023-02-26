@@ -1,5 +1,11 @@
+<h1>The Command 'grep' </h1>
+Brief introduction: This bash command, given a certain pattern list, will search given files for the pattern list (string, numbers,etc).
+After finding what it is looking for, it will return the line that contains the designated pattern list. For instance, finding a string in a 
+text file and it will then return the line that contains that string.
+
 <h2>I will use 'grep -c'</h2>
-input : grep -c "dog" berlitz2/*.txt
+input : 
+`grep -c "dog" berlitz2/*.txt`
 
 output:
 `berlitz2/Algarve-History.txt:0
