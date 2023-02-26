@@ -1,7 +1,6 @@
 <h1>The Command 'grep' </h1>
 Brief introduction: This bash command, given a certain pattern list, will search given files for the pattern list (string, numbers,etc).
-After finding what it is looking for, it will return the line that contains the designated pattern list. For instance, finding a string in a 
-text file and it will then return the line that contains that string.
+After finding what it is looking for, it will return the line that contains the designated pattern list. For instance, grep, given a string and designated text file, will find that string within the text file and return the line that contains the string (if it does).
 
 <h2>I will use 'grep -c'</h2>
 input : 
@@ -91,7 +90,7 @@ Analysis: In this case, I used the command to find number of lines that matches 
 I accessed all the text files in berlitz2 using /*txt. This is useful if you want to find how many lines contain the
 string within each text file.
 
-input : grep -c "the" berlitz2/*.txt
+input : `grep -c "the" berlitz2/*.txt`
 
 With a common word such as "the" I will find the lines that contain it within all the text files.
 
@@ -177,7 +176,8 @@ berlitz2/Vallarta-WhereToGo.txt:111`
 
 <h2>I will use 'grep -h'</h2>
 
-input: grep -h "dog" berlitz2/*.txt
+input: `grep -h "dog" berlitz2/*.txt`
+
 ouput :
 `There are many wooded and park areas around the city where it’s possible to take a simple stroll or enjoy other outdoor activities. Amsterdam Bos (city woodland and recreational area), is the largest and most varied and offers a lake for rowing, bridleways for horse rides, and tracks for cycling — you could hire a bike and spend the day here. Many Amsterdammers go running, frisbeeing, or simply take the dog for a walk. The stables at Amsterdam Bos offer woodland rides, a perfect way to clear the city air from your system (contact Manege de Amsterdamse; Tel. 643 1432).
 There are many wooded and park areas around the city where it’s possible to take a simple stroll or enjoy other outdoor activities. Amsterdam Bos (city woodland and recreational area), is the largest and most varied and offers a lake for rowing, bridleways for horse rides, and tracks for cycling — you could hire a bike and spend the day here. Many Amsterdammers go running, frisbeeing, or simply take the dog for a walk. The stables at Amsterdam Bos offer woodland rides, a perfect way to clear the city air from your system (contact Manege de Amsterdamse; Tel. 643 1432).
@@ -203,7 +203,7 @@ At the summit is one of the oldest stupas in the world, an immense white mound s
 Within all the files, this command displays all the lines in each text file that contains the string "dog". In this case, since "dog" is a common word, hence why we see so many lines. We print all the lines so the output is long.
 Here is another use but in another file.
 
-input: grep -h "dog" berlitz1/*.txt
+input: `grep -h "dog" berlitz1/*.txt`
 
 output:
 `across Gaul, controlling Langue­doc, Dordogne, and a large part of
@@ -254,7 +254,7 @@ output:
 
 <h2>I will use 'grep -v'</h2>
 
-input: grep -v "the" WhatToLasVegas.txt
+input: `grep -v "the" WhatToLasVegas.txt`
 
 output: 
  `What To Do
@@ -619,7 +619,7 @@ output:
 For this command, it compiles all the lines that don't have the string "the". I made sure to pick a common word.
 Otherwise, this would be very large. I also focused on what text file to search the string.
 
-input: grep -v "the" WhatToLasVegas.txt
+input: `grep -v "the" IntroIbiza.txt`
 
 output: 
 `•Ibiza and Formentera
@@ -654,7 +654,7 @@ Luckiliy in this case, "the" was very common. Hence the shorter output.
 <h2>I will use 'grep -w'</h2>
 
 input:
-grep -w "re" IntroIbiza.txt
+`grep -w "re" IntroIbiza.txt`
 
 output:
 `almond trees are objects of beauty and colour; for the farmer, they’re`
@@ -664,7 +664,7 @@ This command is useful when you want to find a prefix or certain substring, rega
 I will try with another substring that's unique
 
 input:
-grep -w "hat" IntroIbiza.txt
+`grep -w "hat" IntroIbiza.txt`
 
 ouput:
 
