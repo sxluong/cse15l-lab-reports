@@ -201,7 +201,8 @@ The Hubei Provincial Museum (Hubeisheng Bowuguan) owes its excellence to the cha
 South of Toploú the road sweeps on to the modern village of Palékastro and its nearby ancient site of the same name, then doglegs south to Zákros where you can leave the car and hike to the coast down one of the most dramatic gorges in the east, the Valley of the Dead. The trek takes around 5 hours and finishes at the village of Kato Zákros on the coast. Here you’ll find several tavernas on the water’s edge and a flock of sea geese eager to sample your leftovers.
 During Tihar, on successive days, crows, dogs, and cows are honored by giving them treats to eat and garlands to wear. (Cats, by the way, are considered unlucky and are rarely seen in Nepal.) On the fifth day, brothers are honored by their sisters, who deck them with flowers, place the tika dot on their forehead, and tie a good-luck thread around their left wrists.
 At the summit is one of the oldest stupas in the world, an immense white mound surmounted by a golden cube, on the four sides of which are the astonishing all-seeing eyes of Buddha. Above this rises a tower of 13 diminishing golden disks symbolizing the 13 steps to enlightenment, then a golden royal parasol topped by a bell-shaped crown. Strings of prayer flags stretch from the tower’s pinnacle, and around the base are hundreds of small prayer wheels. While pilgrims circumambulate the stupa, monkeys, dogs, and pigeons clamber about and forage for scraps of food offerings in small altars set in the foundation.`
-Within all the files, this command displays all the lines in each text file that contains the string "dog". In this case, since "dog" is a common word, hence why we see so many lines. We print all the lines so the output is long.
+
+Analysis: Within all the files, this command displays all the lines in each text file that contains the string "dog". In this case, since "dog" is a common word, hence why we see so many lines. We print all the lines so the output is long.
 Here is another use but in another file.
 
 input: `grep -h "dog" berlitz1/*.txt`
@@ -617,7 +618,8 @@ output:
         Library and Performing Arts Center (Tel. 702/256-5111) features an art
         Nevada Arts Council (Tel. 702/486-3700).
 `
-For this command, it compiles all the lines that don't have the string "the". I made sure to pick a common word.
+
+Analysis: For this command, it compiles all the lines that don't have the string "the". I made sure to pick a common word.
 Otherwise, this would be very large. I also focused on what text file to search the string.
 
 input: `grep -v "the" IntroIbiza.txt`
@@ -650,7 +652,8 @@ output:
         lively nightlife as well.
         this was merely a hamlet on a hilltop crowned by a picturesque
         by.`
-Luckiliy in this case, "the" was very common. Hence the shorter output.
+
+Comment/Analysis: Luckily in this case, "the" was very common. Hence the shorter output.
 
 <h2>I will use 'grep -w'</h2>
 Brief Introduction: This command is used especially for finding substrings as it will return the line that contains that substring
