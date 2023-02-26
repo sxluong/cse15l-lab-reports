@@ -3,6 +3,7 @@ Brief introduction: This bash command, given a certain pattern list, will search
 After finding what it is looking for, it will return the line that contains the designated pattern list. For instance, grep, given a string and designated text file, will find that string within the text file and return the line that contains the string (if it does).
 
 <h2>I will use 'grep -c'</h2>
+
 input : 
 `grep -c "dog" berlitz2/*.txt`
 
