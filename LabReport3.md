@@ -652,6 +652,8 @@ output:
 Luckiliy in this case, "the" was very common. Hence the shorter output.
 
 <h2>I will use 'grep -w'</h2>
+Brief Introduction: This command is used especially for finding substrings as it will return the line that contains that substring
+no matter if it is an actually a word or not. This would be most appropiate for finding prefixes or suffixes.
 
 input:
 `grep -w "re" IntroIbiza.txt`
