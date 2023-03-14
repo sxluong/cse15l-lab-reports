@@ -8,14 +8,14 @@ input: `less -E Paris-WhatToDo.txt`
 
 output/interation: <down><down><down> until I reach the end of the text file -> *exit*
   
-Though I am unable to show the command function, I have described it above. This is useful for a situation in which you scroll through many text files and don't want to constantly type `q` to exit the file when you reach the end of the pages. This is more so a convenience than usefulness.
+Comments/Analysis: Though I am unable to show the command function, I have described it above. This is useful for a situation in which you scroll through many text files and don't want to constantly type `q` to exit the file when you reach the end of the pages. This is more so a convenience than usefulness.
 
   
 input: `less -E vallarta-History.txt`
   
 output/interation: <down><down><down> until I reach the end of the text file -> *exit*
   
-It was essentially the same as the previous command however the scrolling took perhaps a little shorter.
+Comments/Analysis: It was essentially the same as the previous command however the scrolling took perhaps a little shorter.
   
 <h2> I am using `less -f`</h2>
   
@@ -25,14 +25,14 @@ output:
   
 <img width="693" alt="image" src="https://user-images.githubusercontent.com/122576207/224836268-259efbe8-6a65-426d-88a3-49932ea80ee0.png">
 
-For context: "berlitz2" is a directory, not a file type. Knowing the functionality of `less` we know that it won't work on directories. However, the inclusion of the option `-f`, it essentially forces an opening with non-regular files (directory). We were able to "open" the directory but it displayed an error.
+Comments/Analysis: For context: "berlitz2" is a directory, not a file type. Knowing the functionality of `less` we know that it won't work on directories. However, the inclusion of the option `-f`, it essentially forces an opening with non-regular files (directory). We were able to "open" the directory but it displayed an error.
 
 input: `less -f berlitz1`
 
 output:
 <img width="1413" alt="image" src="https://user-images.githubusercontent.com/122576207/224838181-97ac967b-2357-4b29-bbb5-c09c8957d0f7.png">
   
-As the command above, it brought me to another screen and displayed an error.
+Comments/Analysis: As the command above, it brought me to another screen and displayed an error.
 
   
   <h2> I am using `less -N` </h2>
@@ -43,4 +43,17 @@ As the command above, it brought me to another screen and displayed an error.
   
   <img width="820" alt="image" src="https://user-images.githubusercontent.com/122576207/224841521-86d5352d-4ffc-41e8-a26e-ac70480a4e2a.png">
 
+Comments/Analysis: The addition of "-N" simply displayed the line numbers on the side of each line. This is especially useful for keeping track of of what line you're currently reading in bash. Considering some text files are so vast and long, line numbers are useful.
+  
+  input : `less -N HistoryLasVegas.txt`
+  
+  
+  output: 
+  
+  <img width="749" alt="image" src="https://user-images.githubusercontent.com/122576207/224860118-7aa0b7fc-d6ab-46b5-99ae-c87c5abe7f17.png">
 
+  
+  Comments/Analysis: Wow! More line numbers.
+  
+  
+  
