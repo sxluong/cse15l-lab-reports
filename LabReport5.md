@@ -57,3 +57,34 @@ Comments/Analysis: The addition of "-N" simply displayed the line numbers on the
   
   
   
+  <h2> I am using `less -p` </h2>
+  
+  
+  input: `less -p the HistoryMadrid.txt`
+  
+  output:
+  <img width="1246" alt="image" src="https://user-images.githubusercontent.com/122576207/224862849-a72fe8a7-22c3-48f3-9ebd-3340eb477725.png">
+
+  Analysis/Comments: This command brought me to the first occurence of "on" which was at Bronze. However, this command doesn't get the whole word but also accounts for substrings so that might be an issue. This would be useful for finding the place of the first word that you were looking for on a big text file. Say you recalled the first occurence of something being so interesting and it included that specific word-> this would be useful. 
+  
+  input: `less -p water HandRHawaii.txt`
+  
+  output: <img width="1121" alt="image" src="https://user-images.githubusercontent.com/122576207/224863225-98aa5c79-ea2b-4b7f-a7ee-0c49d542d421.png">
+  
+  Analysis/Comments: I chose to search for the first occurence of water because it is hawaii. As it is suppose to, it started exactly at the first occurence of "water".
+  
+  
+  
+  <h2>Source: </h2>
+  
+  [Phoniex_nap](https://phoenixnap.com/kb/less-command-in-linux)
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
